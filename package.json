@@ -5,7 +5,6 @@
   "scripts": {
     "start": "webpack-dev-server --open",
     "build": "webpack --progress --mode=production",
-    "predeploy": "yarn build",
     "deploy": "warp-deploy --asset-dir=dist ."
   },
   "dependencies": {
