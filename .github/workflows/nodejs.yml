@@ -17,7 +17,12 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm install
+        env:
+          CI: true
       - run: npm run build
+        env:
+          CI: true
+          WARP_JS_USER_ID: ${{ secrets.WARP_JS_USER_ID }}
       - run: npm run deploy
         env:
           CI: true
