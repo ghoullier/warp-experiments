@@ -1,0 +1,25 @@
+{
+  "name": "warpjs-webpack-template",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "webpack-dev-server --open",
+    "build": "webpack --progress --mode=production",
+    "predeploy": "yarn build",
+    "deploy": "warp-deploy --asset-dir=dist ."
+  },
+  "dependencies": {
+    "@warpjs/engine": "^1.1.0",
+    "@warpjs/warp": "^2.0.1",
+    "playwright": "^0.11.1"
+  },
+  "devDependencies": {
+    "@warpjs/webpack-plugin": "^1.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  }
+}
