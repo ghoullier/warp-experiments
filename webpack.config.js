@@ -3,6 +3,8 @@ const CopyPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const WarpifyPlugin = require("@warpjs/webpack-plugin");
 
+require("dotenv").config();
+
 module.exports = {
   plugins: [
     new CleanWebpackPlugin(), // clean output for each build

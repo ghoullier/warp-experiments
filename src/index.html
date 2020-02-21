@@ -12,8 +12,20 @@
     <form>
       <label>
         <input type="text" name="url" required value="https://warpjs.com/" />
-        <button type="submit">take screenshot</button>
       </label>
+      <label>
+        <input type="checkbox" name="browserTypes" value="chromium" />
+        <span>chromium</span>
+      </label>
+      <label>
+        <input type="checkbox" name="browserTypes" value="firefox" />
+        <span>firefox</span>
+      </label>
+      <label>
+        <input type="checkbox" name="browserTypes" value="webkit" />
+        <span>webkit</span>
+      </label>
+      <button type="submit">take screenshot</button>
     </form>
     <p id="result"></p>
   </body>
